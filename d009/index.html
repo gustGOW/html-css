@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Videos</title>
+    <link rel="shortcut icon" href="imagens/video-icon.png" type="image/x-icon">
+    <style>
+        /* Estilo para o contêiner da grade */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Define 2 colunas de tamanho igual */
+            grid-template-rows: repeat(2, auto);   /* Define 2 linhas, altura automática */
+            gap: 10px; /* Espaçamento entre as imagens */
+            max-width: 800px; /* Limita a largura total do grid */
+            margin: 0 auto; /* Centraliza o grid horizontalmente */
+            padding: 20px; /* Espaçamento ao redor do grid */
+        }
+
+        /* Estilo para as imagens */
+        .grid-container img {
+            width: 100%; /* Faz com que as imagens ocupem toda a largura da célula */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 8px; /* Bordas arredondadas */
+            border: 2px solid #ccc; /* Borda ao redor das imagens */
+        }
+    </style>
+
+    <style>
+        .texto-branco {
+            color: white; /* Define a cor do texto como branco */
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class ="texto-branco" style="text-align: center;">Videos legais para assistir</h1>
+    <script>
+        document.body.style.backgroundColor = "#232628"; // deixa o fundo cinza
+    </script>
+    <div class="grid-container">
+        <a href="video1/pagina2.html" rel="next" target="_self"><img src="imagens/thumb-hardware.png" alt="thumbnail curso de hardware"></a>
+        <a href="video2/pagina3.html" rel="next" target="_self"><img src="imagens/thumb-html.png" alt="thumbnail curso de HTML"></a>
+        <a href="video3/pagina4.html" rel="next" target="_self"><img src="imagens/thumb-js.png" alt="thumbnail curso de JS"></a>
+        <a href="video4/pagina5.html" rel="next" target="_self"><img src="imagens/thumb-python.png" alt="thumbnail curso de phyton"></a>
+    </div>
+</body>
+</html>

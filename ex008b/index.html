@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações / Pré-formatação</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é em linguagem JavaScript.</p><!-- tag CODE é otima para ler codigos, tornando transformando a numa fonte monoespaçada -->
+    <p>abaixo segue exeplo de um codigo em Python formatado com a tag CODE e tag PRE:</p>
+    <pre><!-- tag PRE, segue a formatação do editor de codigo, as quebras de linhas, paragrafos que forem criados aqui, serão mantidos na exibição -->
+        <code>
+    num = int(input('digite um numeor: '))
+    if num % 2 == 0:
+        print(f'O numero {num} é PAR)
+    else:
+        print(f'O numero {num} é ÍMPAR)
+    print ('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>Risadinha é argumento de puta</q></p>
+    <h2>Citaçoes completas</h2>
+    <p>Segundo Olavo de Carvalho, em seu post no Twitter:
+        <blockquote cite="https://x.com/OdeCarvalho/status/929709820789379077">
+            <q>Por trás de todo liberal há um cu aberto implorando por uma pica comunista.</q> <!-- o CITE dentro da tag BLOCKQUOTE, serve para referenciar a citação usado, ela não tem utilidade para o usuario, porem é util para as ferramentas de busca na internet -->
+        </blockquote>
+        <h2>Abreviações</h2>
+        <p>Estou estudano <abbr title="Hiper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p> <!-- a tg ABBR cria um pop-up com o significado da abreviação -->
+        <h2>Texto invertido</h2>
+        <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+</body>
+</html>

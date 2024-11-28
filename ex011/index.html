@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML 5</title>
+</head>
+<body>
+    <h1>Esse é um exmeplo de imagem dinamica</h1>
+    <p>tente abrir a imagem em diferentes tamanhos de tela e dispositivos</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png"><!--essa imagem que ira aparecer caso o navegador tenha uma largura de tela de no maximo 750px-->
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png"> <!-- essa é a imagem que ira aparecer caso a largura da tela do navegador seja de até no maximo 1050px-->
+        <img src="imagens/foto-g.png" alt="imagem flexivel"> <!--essa é a imagem base, ela irá aparecer caso a tela do navegador seja de no minimo 1050px-->
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>vamos aprender a reproduzir audio em HTML 5</p>
+    <audio preload="metadata" controls>
+        <source src="midia/spaghetti eastern - john patitucci.mp3" type="audio/mpeg"> <!-- mais de um arquivo é usado como fonte para caso o navegado nao consiga reproduzir algum dos arquivos -->
+        <source src="midia/spaghetti eastern - john patitucci.ogg" type="audio/ogg">
+        <source src="midia/spaghetti eastern - john patitucci.wav" type="audio/wav">
+        <p>Infelizmente, seu navegador não conseguiu reproduzir o audio. <a href="midias/spaghetti eastern - john patitucci.mp3">Clique aqui para fazer o download</a>.</p> <!--tag <p> não ira funcionar, pois os navegadores modernos todos reconhecem o formatos de audio, podem nao conseguir reproduzi-los, mas os reconhece -->
+    </audio>
+</body>
+</html>

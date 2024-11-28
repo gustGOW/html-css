@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {                            /*configuração generica do link*/
+            color: rgb(235, 134, 218);
+            text-decoration: none;  /*remove sublinhado dos links*/
+        }
+
+        a:visited {
+            color: rgb(39, 21, 199); /*altera a cor de links ja visitados*/
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        .especial::before {
+            content: ' →';  /*itens com a classe especial recebem esses elementos*/
+        }                   /*esse vem antes*/
+
+        .especial{
+            background-color: rgb(197, 207, 52);  /*aplicado a toda a classe "especial"*/
+        }
+
+        a::after {          /*esse vem depois*/
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/gustavo-moya-2552ba151/" target="_blank">Linkedin</a></li>
+        <li><a href="https://github.com/gustGOW" class="especial" target="_blank">Github</a></li> <!--classe especial atribuida a esse elemento-->
+        <li><a href="https://www.youtube.com/@GustavoMoya-zg6gl" target="_blank">Youtube</a></li>
+    </ul>
+    <br>
+<a href="pseudoclasse.html">exercio pseudo-classe</a>
+<br>
+<a href="hover.html">exercio hover</a>
+</body>
+</html>
